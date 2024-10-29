@@ -1,6 +1,7 @@
 from transformers import ViltProcessor, ViltForQuestionAnswering
 import requests
 from PIL import Image
+import pickle
 
 processor = ViltProcessor.from_pretrained("dandelin/vilt-b32-finetuned-vqa")
 model = ViltForQuestionAnswering.from_pretrained("dandelin/vilt-b32-finetuned-vqa")
